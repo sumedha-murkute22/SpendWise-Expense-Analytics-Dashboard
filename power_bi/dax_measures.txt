@@ -1,0 +1,66 @@
+/* =========================================================================
+   SpendWise Power BI Companion DAX Measures
+   Author: Anish Jagtap (Portfolio Companion Model)
+   ========================================================================= */
+
+// 1. Total Expenditure
+Total Spend = 
+SUM(Transactions[amount])
+
+// 2. Total Allocated Budget
+Total Budget = 
+SUM(MonthlyBudgets[budget_amount])
+
+// 3. Absolute Variance (Positive = Under budget, Negative = Over budget)
+Budget Variance = 
+[Total Budget] - [Total Spend]
+
+// 4. Budget Utilization Percentage
+Budget Utilization % = 
+DIVIDE([Total Spend], [Total Budget], 0) * 100
+
+// 5. Total Number of Logged Transactions
+Transaction Count = 
+COUNTROWS(Transactions)
+
+// 6. Average Transaction Ticket Size
+Average Spend Per Transaction = 
+DIVIDE([Total Spend], [Transaction Count], 0)
+
+// 7. Month-over-Month (MoM) Spend Comparison
+Previous Month Spend = 
+CALCULATE(
+    [Total Spend],
+    PREVIOUSMONTH(DimCalendar[Date])
+)
+
+MoM Spend Growth % = 
+VAR PreviousSpend = [PreviousMonth Spend]
+RETURN
+IF(
+    ISBLANK(PreviousSpend) || PreviousSpend == 0,
+    BLANK(),
+    DIVIDE([Total Spend] - PreviousSpend, PreviousSpend, 0) * 100
+)
+
+// 8. Year-to-Date (YTD) Spend
+YTD Spend = 
+TOTALYTD([Total Spend], DimCalendar[Date])
+
+// 9. Top Expense Category Name
+Top Expense Category = 
+TOPN(
+    1,
+    VALUES(DimCategory[Category]),
+    [Total Spend],
+    DESC
+)
+
+// 10. Budget Health Indicator Flag (For Conditional Formatting in Table / Matrix)
+Budget Status Indicator = 
+SWITCH(
+    TRUE(),
+    [Budget Utilization %] > 100, "🔴 Over Budget",
+    [Budget Utilization %] >= 85, "🟡 Near Ceiling",
+    "🟢 Healthy"
+)

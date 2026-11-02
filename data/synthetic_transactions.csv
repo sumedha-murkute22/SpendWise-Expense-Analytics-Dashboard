@@ -1,0 +1,46 @@
+date,category,amount,description,payment_method
+2026-08-01,Housing,1200.00,Monthly Apartment Rent,Bank Transfer
+2026-08-02,Groceries,84.50,Whole Foods Market,Credit Card
+2026-08-03,Utilities,65.20,Electricity & Water Bill,Debit Card
+2026-08-04,Dining,32.40,Local Trattoria Dinner,Credit Card
+2026-08-06,Transportation,45.00,Metro Monthly Rail Pass,Debit Card
+2026-08-08,Entertainment,15.99,Streaming Subscription,Credit Card
+2026-08-10,Healthcare,40.00,Prescription Co-pay,Debit Card
+2026-08-12,Groceries,92.15,Trader Joe's,Credit Card
+2026-08-14,Shopping,58.00,Summer Apparel,Credit Card
+2026-08-17,Dining,24.50,Coffee & Sandwiches,Cash
+2026-08-19,Utilities,49.99,Broadband Internet,Credit Card
+2026-08-22,Groceries,76.30,Weekly Grocery Run,Credit Card
+2026-08-25,Entertainment,35.00,Cinema Movie Tickets,Credit Card
+2026-08-28,Transportation,30.00,Rideshare Fare,Credit Card
+2026-08-30,Dining,48.20,Weekend Family Brunch,Debit Card
+2026-09-01,Housing,1200.00,Monthly Apartment Rent,Bank Transfer
+2026-09-02,Groceries,95.40,Supermarket Weekly Haul,Credit Card
+2026-09-03,Utilities,68.50,Power & Water Board,Debit Card
+2026-09-05,Transportation,45.00,Metro Transit Pass,Debit Card
+2026-09-07,Dining,28.90,Lunch with Colleagues,Credit Card
+2026-09-09,Shopping,110.00,Office Desk Lamp & Ergonomics,Credit Card
+2026-09-12,Groceries,81.20,Local Organic Grocery,Credit Card
+2026-09-14,Entertainment,15.99,Streaming Subscription,Credit Card
+2026-09-16,Healthcare,85.00,Dental Checkup Consultation,Debit Card
+2026-09-18,Dining,54.00,Sushi Dinner,Credit Card
+2026-09-20,Utilities,49.99,Fiber Internet Service,Credit Card
+2026-09-23,Groceries,88.75,Costco Provisions,Debit Card
+2026-09-25,Shopping,42.50,Books and Stationery,Credit Card
+2026-09-27,Transportation,28.50,City Cab Fare,Debit Card
+2026-09-29,Entertainment,60.00,Concert Ticket,Credit Card
+2026-10-01,Housing,1200.00,Monthly Apartment Rent,Bank Transfer
+2026-10-02,Groceries,102.30,Supermarket Groceries,Credit Card
+2026-10-04,Utilities,62.10,Electric Utility Provider,Debit Card
+2026-10-06,Dining,38.50,Pizzeria Dinner,Credit Card
+2026-10-08,Transportation,45.00,Subway Transit Card,Debit Card
+2026-10-10,Shopping,75.00,Running Shoes,Credit Card
+2026-10-12,Groceries,78.90,Farmers Market Fresh Produce,Cash
+2026-10-14,Entertainment,15.99,Streaming Subscription,Credit Card
+2026-10-15,Healthcare,35.00,Pharmacy Supplies,Debit Card
+2026-10-18,Dining,44.20,Casual Bistro Dining,Credit Card
+2026-10-20,Utilities,49.99,Broadband Internet,Credit Card
+2026-10-23,Groceries,91.60,Weekly Pantry Restock,Credit Card
+2026-10-25,Shopping,130.00,Winter Jacket,Credit Card
+2026-10-27,Transportation,35.20,Express Airport Train,Debit Card
+2026-10-30,Dining,62.00,Birthday Celebration Dinner,Credit Card
