@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SpendWise — Expense Analytics & Budgeting Dashboard
 
 > **Portfolio Project:** Full-stack personal finance and budgeting platform featuring a React.js interactive analytics dashboard, a Python REST API, a SQL database, automated CSV transaction ingestion, and a companion Power BI business intelligence model.
@@ -200,3 +201,6 @@ cp .env.example .env
 ## 7. Power BI Companion Integration
 
 Refer to [power_bi/README_PowerBI.md](power_bi/README_PowerBI.md) for full instructions on loading `data/synthetic_transactions.csv` into Power BI Desktop, establishing relationship models, and applying the measures in `power_bi/dax_measures.txt`.
+=======
+# SpendWise-Expense-Analytics-Dashboard
+>>>>>>> d47cd87fad783cf38bff4bf16fcc7f1f68abd195
